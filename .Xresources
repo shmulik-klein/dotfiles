@@ -1,1 +1,69 @@
-/home/shmulik/.Xresources
+URxvt.perl-ext-common: fullscreen,tabbedex,clipboard,keyboard-select
+
+!Fonts -> Inconsolata
+URxvt.font: xft:Inconsolata-12
+URxvt.boldFont: xft:Inconsolata-12
+URxvt.letterSpace: -1
+
+URxvt.scrollBar: false
+
+! extensions -> clipboard (requires xsel)
+! https://github.com/muennich/urxvt-perls
+URxvt.clipboard.autocopy: true
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste
+URxvt.keysym.C-M-v : perl:clipboard:paste_escaped
+
+! extensions -> keyboard-select
+! https://github.com/muennich/urxvt-perls
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.C-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! extensions -> tabbex (requires xsel)
+URxvt.keysym.Shift-Left: perl:tabbedex:prev_tab
+URxvt.keysym.Shift-Right: perl:tabbedex:next_tab
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 2
+URxvt.tabbed.tab-bg: 0
+URxvt.tabbed.autohide:  yes
+URxvt.tabbed.new-button:  no
+URxvt.tabbed.title: yes
+
+! extensions -> fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
+
+! colors
+URxvt.depth: 32
+
+URxvt*background:                     #101218
+URxvt*foreground:                     #d1d4e0
+URxvt*cursorColor:                    #d1d4e0
+URxvt*scrollColor:                    #d1d4e0
+URxvt*highlightColor:                 #252936
+URxvt*highlightTextColor:             #C0C5CE
+
+URxvt*color0:                         #101218
+URxvt*color1:                         #ee829f
+URxvt*color2:                         #a5ffe1
+URxvt*color3:                         #ffefcc
+URxvt*color4:                         #97bbf7
+URxvt*color5:                         #c0b7f9
+URxvt*color6:                         #97e0ff
+URxvt*color7:                         #d1d4e0
+URxvt*color8:                         #7780a1
+URxvt*color9:                         #ee829f
+URxvt*color10:                        #a5ffe1
+URxvt*color11:                        #ffefcc
+URxvt*color12:                        #97bbf7
+URxvt*color13:                        #c0b7f9
+URxvt*color14:                        #97e0ff
+URxvt*color15:                        #ffffff
+URxvt*color16:                        #f99170
+URxvt*color17:                        #fcc09e
+URxvt*color18:                        #1f222d
+URxvt*color19:                        #252936
+URxvt*color20:                        #C0C5CE
+URxvt*color21:                        #C9CCDB
