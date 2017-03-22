@@ -4,7 +4,6 @@ URxvt.perl-ext-common: fullscreen,tabbedex,clipboard,keyboard-select
 URxvt.font: xft:Inconsolata-12
 URxvt.boldFont: xft:Inconsolata-12
 URxvt.letterSpace: -1
-
 URxvt.scrollBar: false
 
 ! extensions -> clipboard (requires xsel)
@@ -34,6 +33,10 @@ URxvt.tabbed.title: yes
 
 ! extensions -> fullscreen
 URxvt.keysym.F11: perl:fullscreen:switch
+
+! disable keycap picture insert mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false 
 
 ! colors
 URxvt.depth: 32
