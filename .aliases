@@ -1,0 +1,6 @@
+# general aliases
+alias diff='colordiff'
+
+# git aliases
+alias gp='git pull'
+
