@@ -2,5 +2,10 @@
 alias diff='colordiff'
 
 # git aliases
+alias gs='git status'
+alias gch='git checkout'
+alias gchb='git checkout -b'
+alias gd='git diff'
+alias gcm='git commit -m'
 alias gp='git pull'
 
